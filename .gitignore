@@ -1,0 +1,11 @@
+
+*.iml
+*.eml
+
+
+## Ignore intellij configuration files
+.idea/
+
+# IntelliJ
+/out/
+
