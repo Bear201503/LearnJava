@@ -1,4 +1,4 @@
-package classwork;
+package constructor;
 
 public class TennisPlayer {
 
@@ -8,12 +8,52 @@ public class TennisPlayer {
     private int rank;
     private int jerseyNumber;
 
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public void setGamesWon(int gamesWon){
+        this.gamesWon = gamesWon;
+    }
+
+    public int getGamesWon(){
+        return this.gamesWon;
+    }
+
     public TennisPlayer(){
         System.out.println("TennisPlayer");
     }
     public TennisPlayer(String name1, String gender1){
         this.name = name1;
         this.gender = gender1;
+    }
+    public void setJerseyNumber(int jerseyNumber){
+        if(jerseyNumber<0){
+            this.jerseyNumber=0;
+        }
+        else
+            this.jerseyNumber = jerseyNumber;
+    }
+    public int getJerseyNumber(){
+        return this.jerseyNumber;
+    }
+    public void setRank(int rank){
+        if(rank<0){
+            this.rank = 999;
+        }
+        else
+            this.rank = rank;
+    }
+    public int getRank(){
+        return this.rank;
+    }
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+    public String getGender(){
+        return this.gender;
     }
 
     public TennisPlayer(String name1, String gender1, int gamesWon1, int rank1, int jerseyNumber){
@@ -58,12 +98,6 @@ public class TennisPlayer {
 
     }
 
-    public void setJerseyNumber(int jerseyNumber){
-        this.jerseyNumber = jerseyNumber;
 
 
-    }
-    public void setGamesWon(int gamesWon){
-        this.gamesWon = gamesWon;
-    }
 }
